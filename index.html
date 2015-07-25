@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Celsenheit Temperature Converter</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900|Montserrat:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="bower_components/normalize.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type="text/javascript" src="celsenheit.js"></script>
+</head>
+<body>
+<div class="main_container">
+  <div class="hero">
+    <h1>Celsenheit Converter</h1>
+    <h3>One cool converter for Fahrenheit & Celsius.</h3>
+    <div class="conversion_selection">
+      <h1 class="temperature_type">F</h1>
+      <button class="conversion_toggle"></button>
+      <h1 class="temperature_type">C</h1>
+    </div>
+    <div class="temp_input_container">
+      <input type="number" id="temperature_input">
+      <button type="button" onclick="convertFtoC()">Convert</button>
+    </div>
+    <div class="answer_container">
+      <h1 id="answer"></h1>
+    </div>
+  </div>
+</div>
+</body>
+</html>
