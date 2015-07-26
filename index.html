@@ -13,19 +13,23 @@
   <div class="hero">
     <h1>Celsenheit</h1>
     <h3>One cool Fahrenheit/Celsius converter</h3>
-    <div class="conversion_selection">
-      <h1 class="temperature_type">F</h1>
-        <div class="toggle_wrapper"><button type="button" onclick="conversionToggle()" id="conversion_toggle">Switch Conversion Type</button></div>
-      <h1 class="temperature_type">C</h1>
-    </div>
-    <div class="temp_input_container">
-      <input type="number" id="temperature_input">
-      <button type="button" onclick="convertFtoC()" id="conversion_submission">Convert</button>
-    </div>
-    <div class="answer_container">
-      <h1 id="answer"></h1>
-    </div>
+    <h5><span class="keyboard_shortcut">T</span>Toggle conversion type. <span class="keyboard_shortcut">Enter</span>Submit conversion.</h5>
+  </div>
+  <div class="conversion_selection">
+    <h1 class="temperature_type">F</h1>
+      <div class="toggle_wrapper"><button type="button" onclick="conversionToggle()" id="conversion_toggle">Switch Conversion Type</button></div>
+    <h1 class="temperature_type">C</h1>
+  </div>
+  <div class="temp_input_container">
+    <input type="number" id="temperature_input">
+    <button type="button" onclick="convertFtoC()" id="conversion_submission">Convert</button>
+  </div>
+  <div class="answer_container">
+    <h1 id="answer"></h1>
   </div>
 </div>
+<script type="text/javascript">
+  document.getElementById("temperature_input").focus();
+</script>
 </body>
 </html>

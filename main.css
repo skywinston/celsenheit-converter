@@ -50,12 +50,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .hero h1 {
   font-size: 3.25em;
   font-weight: 900;
   text-align: center;
+  margin: 24px auto;
 }
 
 .hero h3 {
@@ -66,11 +68,25 @@ body {
   margin: auto;
 }
 
+.hero h5 {
+  text-align: left;
+  color: #9E9E9E;
+  margin: 16px 0px;
+  font-weight: 400;
+}
+
+.keyboard_shortcut {
+  border-radius: 2px;
+  border: 2px solid #9E9E9E;
+  padding: 0px 4px;
+  margin: 4px 4px;
+}
+
 .conversion_selection {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 40px;
   align-items: center;
 }
 
@@ -78,6 +94,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 3em;
+  margin: 0;
 }
 
 #conversion_toggle {
@@ -96,13 +113,65 @@ body {
 
 .temp_input_container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.temperature_input {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 
+input[type=number] {
+  display: block;
+  width: 80px;
+  height: 64px;
+  text-align: center;
+  font-family: 'Lato', sans-serif; 
+  font-size: 2em;
+  font-weight: 900;
+  padding: 4px 0px;
+  border-radius: 2px;
+  outline: none;
+  border: 2px solid #EEEEEE;   
+  margin-bottom: 16px;
+  margin-top: 16px;
+  width: 160px;
+}
+
+#conversion_submission {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 1em;
+  border: 2px solid #00E676;
+  margin: 0px 24px;
+  border-radius: 2px;
+  background-color: #fafafa;
+  padding: 16px;
+  max-width: 360px;
+  width: 160px;
+}
+
+.answer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#answer {
+  text-align: center;
+  font-size: 3em;
+}
+
+.degrees {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .6em;
+  font-weight: 700;
+  margin-top: -8px;
+  vertical-align: text-top;
 }
 
 .c_to_f {
